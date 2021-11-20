@@ -26,6 +26,7 @@ public class BaseEntity implements Serializable {
 	@Column(name = "ativo")
 	private boolean ativo = Boolean.TRUE;
 	
+	@SuppressWarnings("deprecation")
 	@Column(columnDefinition = "TEXT", name = "justificativa_inativacao")
 	@Type(type = "text")
 	private String justificativaInativacao;
